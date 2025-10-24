@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spirit Guide | Fashion • Food • Aksesoris</title>
+    <link href="./src/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- 🔹 NAVBAR -->
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-lg shadow-md z-50">
+      <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="./src/img/SpiritGuide.jpg" alt="Spirit Guide" class="w-10 h-10 rounded-full" />
+          <h1 class="text-xl font-bold text-yellow-600 tracking-wide">Spirit Guide</h1>
+        </div>
+
+        <!-- Menu Tengah -->
+        <nav class="hidden md:flex space-x-10 font-medium text-gray-700">
+          <a href="#home" class="hover:text-yellow-600 transition">Home</a>
+          <a href="#catalog" class="hover:text-yellow-600 transition">Catalog</a>
+          <a href="#about" class="hover:text-yellow-600 transition">About</a>
+        </nav>
+
+        <!-- Login Button -->
+        <div class="hidden md:block">
+          <a href="login.php"
+            class="bg-yellow-600 text-white px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+            Login
+          </a>
+        </div>
+
+        <!-- Hamburger -->
+        <button id="menu-btn" class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
+        <span class="block w-full h-0.5 bg-gray-700 rounded"></span>
+        <span class="block w-full h-0.5 bg-gray-700 rounded"></span>
+        <span class="block w-full h-0.5 bg-gray-700 rounded"></span>
+      </button>
+
+      </div>
+
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="hidden flex-col bg-white shadow-md md:hidden text-center space-y-4 py-4">
+        <a href="#home" class="hover:text-yellow-600 transition">Home</a>
+        <a href="#catalog" class="hover:text-yellow-600 transition">Catalog</a>
+        <a href="#about" class="hover:text-yellow-600 transition">About</a>
+        <a href="login.php"
+          class="bg-yellow-600 text-white w-1/2 mx-auto px-4 py-2 rounded-full hover:bg-yellow-700 transition">
+          Login
+        </a>
+      </div>
+    </header>
+
+    <!-- 🔹 HERO SECTION -->
+    <section class="relative flex flex-col items-center justify-center text-center pt-32 pb-20 bg-gray-50 reveal">
+      <img src="./src/img/SpiritGuide.jpg" alt="Spirit Guide Hero"
+        class="w-64 h-64 object-cover rounded-full shadow-lg mb-6 border-4 border-yellow-500" />
+      <h2 class="text-4xl font-bold text-gray-900 mb-3">Welcome to <span class="text-yellow-600">Spirit Guide</span></h2>
+      <p class="text-gray-600 max-w-lg mx-auto">
+        Temukan gaya hidupmu lewat <span class="text-yellow-600 font-medium">fashion</span>,
+        <span class="text-yellow-600 font-medium">makanan</span>, dan
+        <span class="text-yellow-600 font-medium">aksesoris</span> pilihan kami.
+      </p>
+      <a href="#catalog"
+        class="mt-6 bg-yellow-600 text-white px-6 py-3 rounded-full hover:bg-yellow-700 transition shadow-md">
+        Jelajahi Sekarang
+      </a>
+    </section>
+
+    <!-- 🔹 CATALOG SECTION -->
+    <section id="catalog" class="max-w-6xl mx-auto px-4 py-16 reveal">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Katalog Produk</h3>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+        <div class="shadow-md rounded-xl overflow-hidden hover:shadow-xl transition">
+          <img src="./src/img/SpiritGuide.jpg" alt="Fashion" class="w-full h-64 object-cover" />
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-semibold text-yellow-600">Fashion</h4>
+            <p class="text-gray-600 text-sm mt-2">Tren terkini yang memadukan gaya dan kenyamanan.</p>
+          </div>
+        </div>
+
+        <div class="shadow-md rounded-xl overflow-hidden hover:shadow-xl transition">
+          <img src="./src/img/SpiritGuide.jpg" alt="Food" class="w-full h-64 object-cover" />
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-semibold text-yellow-600">Food</h4>
+            <p class="text-gray-600 text-sm mt-2">Nikmati cita rasa modern khas Spirit Guide.</p>
+          </div>
+        </div>
+
+        <div class="shadow-md rounded-xl overflow-hidden hover:shadow-xl transition">
+          <img src="./src/img/SpiritGuide.jpg" alt="Aksesoris" class="w-full h-64 object-cover" />
+          <div class="p-4 text-center">
+            <h4 class="text-xl font-semibold text-yellow-600">Aksesoris</h4>
+            <p class="text-gray-600 text-sm mt-2">Detail kecil yang melengkapi tampilanmu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="bg-white py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-yellow-600 mb-6">About Spirit Guide</h2>
+    <p class="text-gray-700 max-w-3xl mx-auto mb-10">
+      Spirit Guide hadir sebagai destinasi gaya hidup yang menginspirasi, 
+      menghadirkan koleksi <span class="font-semibold text-yellow-600">fashion</span>, 
+      <span class="font-semibold text-yellow-600">food</span>, dan 
+      <span class="font-semibold text-yellow-600">aksesoris</span> 
+      dengan sentuhan elegan dan modern.  
+      Kami percaya bahwa setiap orang memiliki gaya uniknya masing-masing, 
+      dan Spirit Guide siap menjadi panduanmu untuk mengekspresikan diri dengan penuh makna.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div class="p-6 shadow-lg rounded-xl hover:shadow-2xl transition duration-300 bg-yellow-50">
+        <img src="./src/img/SpiritGuide.jpg" alt="Fashion" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Fashion</h3>
+        <p class="text-gray-600">Koleksi yang memadukan tren modern dan sentuhan klasik untuk gaya yang tak lekang oleh waktu.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-xl hover:shadow-2xl transition duration-300 bg-yellow-50">
+        <img src="./src/img/SpiritGuide.jpg" alt="Food" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Food</h3>
+        <p class="text-gray-600">Nikmati pilihan kuliner yang menggugah selera dengan cita rasa dan tampilan istimewa.</p>
+      </div>
+      <div class="p-6 shadow-lg rounded-xl hover:shadow-2xl transition duration-300 bg-yellow-50">
+        <img src="./src/img/SpiritGuide.jpg" alt="Accessories" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">Accessories</h3>
+        <p class="text-gray-600">Detail kecil yang memberikan sentuhan besar pada gaya hidupmu setiap hari.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 🔹 FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+      <p>© 2025 Spirit Guide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./src/js/navbar.js"></script>
+  </body>
+</html>

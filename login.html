@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Spirit Guide</title>
+  <link href="./src/css/style.css" rel="stylesheet" />
+  <script defer src="./src/js/login.js"></script>
+
+  <style>
+    body {
+      background: url('./src/img/SpiritGuide.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Overlay agar background tidak terlalu mencolok */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(5px);
+      z-index: 0;
+    }
+
+    .login-container {
+      position: relative;
+      z-index: 10;
+      width: 380px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+      padding: 2.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .login-container:hover {
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.45);
+      transform: translateY(-3px);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #b8860b;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.2s ease;
+    }
+
+    input:focus {
+      border-color: #d4af37;
+      box-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background: linear-gradient(135deg, #d4af37, #ffcc33);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #ffcc33, #d4af37);
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #555;
+    }
+
+    a {
+      color: #b8860b;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h1>Login ke Spirit Guide</h1>
+    <form id="loginForm">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required />
+      </div>
+      <div style="margin-top: 1rem;">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required />
+      </div>
+      <button type="submit">Masuk</button>
+    </form>
+    <p>Belum punya akun? <a href="#">Daftar sekarang</a></p>
+  </div>
+</body>
+</html>

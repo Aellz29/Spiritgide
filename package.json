@@ -1,0 +1,11 @@
+{
+  "name": "spirit-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
